@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+header nav{
+	background: rgb(255, 255, 255);
+}
+
+header nav .brand-logo{
+	color: #000000;
+}
+
+header nav i{
+	color: #000000;
+}
+
+header nav .hide-on-med-and-down{
+	margin-right: 40px;
+}
+
+header nav .hide-on-med-and-down a{
+	color: #000000;
+}
+
+
+main {
+	flex: 1 0 auto;
+	width: 98%;
+	margin: 0px auto;
+}
+
+body main .fotoPortada{
+	margin-bottom: 5px;
+	min-height:calc(100vh - 64px);
+	border: none;
+	background-image: url(../img/fondo3.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+body main .fotoPortada h3{
+	width: 90%;
+	margin: 2rem auto;
+	font-size: 3.5rem;
+	color: #fff;
+	text-align: right;
+}
+
+main .tarjetas .large{
+	height: 400px;
+	display: block;
+	width: 100%;
+	margin: 5px .5%;
+	background-image: url(../img/paris.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+main .tarjetas .large .card-image{
+	min-height: 100% !important;
+	background: rgba(74, 71, 73, 0.4);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+main .tarjetas .large .card-image:hover{
+	background: none;
+}
+
+main .tarjetas .large .card-image .capa{
+	width: 100%;
+}
+
+main .tarjetas .large .card-image .tituloTarjeta{
+	text-align: center;
+}
+
+main .tarjetas .large .card-image .tituloTarjeta h4,
+main .tarjetas .large .card-image .tituloTarjeta i{
+	color: #fff;
+}
+
+main .tarjetas .large .card-image .tituloTarjeta .btn{
+	background: #2bbbad;
+	font-weight: bold;
+}
+
+main .tarjetas .large .card-image:hover .tituloTarjeta .btn{
+	background: #fff;
+	color: #2bbbad;
+}
+
+footer {
+  background: rgb(0, 0, 0) !important;
+  font-size: 14px;
+}
+
+footer ul li{
+  text-align: right;
+}
+
+/*Móviles en horizontal o tablets en vertical*/
+
+@media (min-width: 600px) {
+	body {
+		background: red;
+	}
+
+	main .tarjetas .large{
+		height: 400px;
+		display: block;
+		width: 70%;
+		margin: 5px 15%;
+	}
+
+  footer ul{
+    float: right;
+ }
+
+  footer ul li,
+  footer .killapu{
+     display: inline-block;
+     margin: 0 8px;
+     vertical-align: middle;
+   }
+
+  footer ul li a:hover{
+     border-bottom: solid 2.5px #fff;
+   }
+}
+
+/*Tablets en horizontal y Escritorios normales */
+
+@media (min-width: 992px) {
+	body {
+		background: yellow;
+	}
+
+	header nav .brand-logo{
+		margin-left: 40px;
+		color: #000000;
+	}
+
+	main .tarjetas{
+		position: relative;
+		height: 1500px;
+		border: solid 1px red;
+		vertical-align: baseline;
+	}
+
+	main .tarjetas .large{
+		width: 32.3%;
+		position: absolute;
+		margin: .9%;
+		transition: .5s;
+	}
+
+	main .tarjetas #cuadro1{
+		top: 0;
+		left: 0;
+	}
+
+	main .tarjetas #cuadro2{
+		top: 0;
+		left: 33.2%;
+	}
+
+	main .tarjetas #cuadro3{
+		top: 0;
+		left: 66.4%;
+	}
+
+	main .tarjetas #cuadro4{
+		top: calc(400px + 0.9%);
+		left: 0;
+	}
+
+	main .tarjetas #cuadro5{
+		top: calc(400px + 0.9%);
+		left: 33.2%;
+	}
+
+	main .tarjetas #cuadro6{
+		top: calc(400px + 0.9%);
+		left: 66.4%;
+	}
+
+	main .tarjetas #cuadro7{
+		top: calc(800px + 1.8%);
+		left:0;
+	}
+
+	main .tarjetas #cuadro8{
+		top: calc(800px + 1.8%);
+		left:33.2%;
+	}
+
+	main .tarjetas #cuadro9{
+		top: calc(800px + 1.8%);
+		left:66.4%;
+	}
+
+}
+
+/*Escritorios muy anchos*/
+
+@media (min-width: 1200px) {
+	body {
+		background: blue;
+	}
+}
