@@ -18,23 +18,26 @@
 			      <a href="#!" class="brand-logo">Grupo Rinsa</a>
 			      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			      <ul class="right hide-on-med-and-down">
-			        <li><a href="#">LINK A X</a></li>
-			        <li><a href="#">LINK A X</a></li>
-			        <li><a href="#">LINK A X</a></li>
-			        <li><a href="#">LINK A X</a></li>
+			        <li><a href="#">NOSOTROS</a></li>
+			        <li><a href="#">SERVICIOS</a></li>
+			        <li><a href="#">MUNDO MEJOR</a></li>
+			        <li><a href="#">EQUIPO</a></li>
+							<li><a href="#">CONTACTO</a></li>
 			      </ul>
 			      <ul class="side-nav" id="mobile-demo">
-			        <li><a href="#">LINK A X</a></li>
-			        <li><a href="#">LINK A X</a></li>
-			        <li><a href="#">LINK A X</a></li>
-			        <li><a href="#">LINK A X</a></li>
+							<li><a href="#">NOSOTROS</a></li>
+			        <li><a href="#">SERVICIOS</a></li>
+			        <li><a href="#">MUNDO MEJOR</a></li>
+			        <li><a href="#">EQUIPO</a></li>
+							<li><a href="#">CONTACTO</a></li>
 			      </ul>
 			    </div>
 			  </nav>
 		</header>
 		<main>
 				<div class="fotoPortada">
-					<h3>Creemos que juntos podemos lograr un <br>mundo mejor para todos</h3>
+					<img src="img/fotoPortadaWeb.jpeg" alt="" id="FotoPortadaJPG">
+					<h3>_Creando un mundo<br>mejor para todos</h3>
 				</div>
 				<div class="tarjetas">
 					<div class="card large" id="cuadro1">
@@ -192,116 +195,116 @@
 			$(".activator").click(function (){
 				if (ancho_pantalla>=599 && ancho_pantalla<=978) {
 					// $(".activator").parent().css({"width":"70%","height":"400px","margin":"5px 15%"});
-					$(this).parent().css({"width":"100%","height":"800px","margin":"5px 0px"});
+					$(this).parent().css({"width":"100%","height":"810px","margin":"5px 0px"});
 				}
 
 				else if (ancho_pantalla>978) {
 					$(".card-reveal").css({"display":"none","transform":"translateY(100%)"});
-					$(".tarjetas").css("height","1500px");
-					$("#cuadro1").css({"width":"32.3%","height":"400px"});
-					$("#cuadro2").css({"width":"32.3%","height":"400px"});
-					$("#cuadro3").css({"width":"32.3%","height":"400px"});
-					$("#cuadro4").css({"width":"32.3%","height":"400px"});
-					$("#cuadro5").css({"width":"32.3%","height":"400px"});
-					$("#cuadro6").css({"width":"32.3%","height":"400px"});
-					$("#cuadro7").css({"width":"32.3%","height":"400px"});
-					$("#cuadro8").css({"width":"32.3%","height":"400px"});
-					$("#cuadro9").css({"width":"32.3%","height":"400px"});
-					$("#cuadro2").css({"top":"0","left":"0"});
-					$("#cuadro2").css({"top":"0","left":"33.2%"});
-					$("#cuadro3").css({"top":"0","left":"66.4%"});
-					$("#cuadro4").css({"top":"calc(400px + 0.9%)","left":"0"});
-					$("#cuadro5").css({"top":"calc(400px + 0.9%)","left":"33.2%"});
-					$("#cuadro6").css({"top":"calc(400px + 0.9%)","left":"66.4%"});
-					$("#cuadro7").css({"top":"calc(800px + 1.8%)","left":"0"});
-					$("#cuadro8").css({"top":"calc(800px + 1.8%)","left":"33.2%"});
-					$("#cuadro9").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
-					// $(".activator").parent().css({"width":"32.3%","height":"400px","margin":".9%"});
+					$(".tarjetas").css("height","1230px");
+					$("#cuadro1").css({"width":"32%","height":"400px"});
+					$("#cuadro2").css({"width":"32%","height":"400px"});
+					$("#cuadro3").css({"width":"32%","height":"400px"});
+					$("#cuadro4").css({"width":"32%","height":"400px"});
+					$("#cuadro5").css({"width":"32%","height":"400px"});
+					$("#cuadro6").css({"width":"32%","height":"400px"});
+					$("#cuadro7").css({"width":"32%","height":"400px"});
+					$("#cuadro8").css({"width":"32%","height":"400px"});
+					$("#cuadro9").css({"width":"32%","height":"400px"});
+					$("#cuadro1").css({"top":"0","left":"0"});
+					$("#cuadro2").css({"top":"0","left":"33.34%"});
+					$("#cuadro3").css({"top":"0","left":"66.68%"});
+					$("#cuadro4").css({"top":"410px","left":"0"});
+					$("#cuadro5").css({"top":"410px","left":"33.34%"});
+					$("#cuadro6").css({"top":"410px","left":"66.68%"});
+					$("#cuadro7").css({"top":"820px","left":"0"});
+					$("#cuadro8").css({"top":"820px","left":"33.34%"});
+					$("#cuadro9").css({"top":"820px","left":"66.68%"});
+					// $(".activator").parent().css({"width":"32%","height":"400px","margin":".9%"});
 					var cuadroActivo = $(this).parent().attr("id");
 					if (cuadroActivo=="cuadro1") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro1").css({"width":"64.6%","height":"800px"});
-						$("#cuadro2").css({"top":"0","left":"66.4%"});
-						$("#cuadro3").css({"top":"calc(400px + 0.9%)","left":"66.4%"});
-						$("#cuadro4").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro5").css({"top":"calc(800px + 1.8%)","left":"33.2%"});
-						$("#cuadro6").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
-						$("#cuadro7").css({"top":"calc(1200px + 2.7%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"66.4%"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro1").css({"width":"65.34%","height":"810px"});
+						$("#cuadro2").css({"top":"0","left":"66.68%"});
+						$("#cuadro3").css({"top":"410px","left":"66.68%"});
+						$("#cuadro4").css({"top":"820px","left":"0"});
+						$("#cuadro5").css({"top":"820px","left":"33.34%"});
+						$("#cuadro6").css({"top":"820px","left":"66.68%"});
+						$("#cuadro7").css({"top":"1230px","left":"0"});
+						$("#cuadro8").css({"top":"1230px","left":"33.34%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro2") {
-						$(".tarjetas").css("height","2200px");
+						$(".tarjetas").css("height","1640px");
 						$("#cuadro1").css({"top":"0","left":"0"});
-						$("#cuadro2").css({"width":"64.6%","height":"800px"});
-						$("#cuadro3").css({"top":"calc(400px + 0.9%)","left":"0"});
-						$("#cuadro4").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro5").css({"top":"calc(800px + 1.8%)","left":"33.2%"});
-						$("#cuadro6").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
-						$("#cuadro7").css({"top":"calc(1200px + 2.7%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"66.4%"});
+						$("#cuadro2").css({"width":"65.34%","height":"810px"});
+						$("#cuadro3").css({"top":"410px","left":"0"});
+						$("#cuadro4").css({"top":"820px","left":"0"});
+						$("#cuadro5").css({"top":"820px","left":"33.34%"});
+						$("#cuadro6").css({"top":"820px","left":"66.68%"});
+						$("#cuadro7").css({"top":"1230px","left":"0"});
+						$("#cuadro8").css({"top":"1230px","left":"33.34%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro3") {
-						$(".tarjetas").css("height","2200px");
+						$(".tarjetas").css("height","1640px");
 						$("#cuadro1").css({"top":"0","left":"0"});
-						$("#cuadro2").css({"top":"calc(400px + 0.9%)","left":"0"});
-						$("#cuadro3").css({"width":"64.6%","height":"800px","top":"0","left":"33.2%"});
-						$("#cuadro4").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro5").css({"top":"calc(800px + 1.8%)","left":"33.2%"});
-						$("#cuadro6").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
-						$("#cuadro7").css({"top":"calc(1200px + 2.7%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"66.4%"});
+						$("#cuadro2").css({"top":"410px","left":"0"});
+						$("#cuadro3").css({"width":"65.34%","height":"810px","top":"0","left":"33.34%"});
+						$("#cuadro4").css({"top":"820px","left":"0"});
+						$("#cuadro5").css({"top":"820px","left":"33.34%"});
+						$("#cuadro6").css({"top":"820px","left":"66.68%"});
+						$("#cuadro7").css({"top":"1230px","left":"0"});
+						$("#cuadro8").css({"top":"1230px","left":"33.34%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro4") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro4").css({"width":"64.6%","height":"800px"});
-						$("#cuadro5").css({"top":"calc(400px + 1.8%)","left":"66.4%"});
-						$("#cuadro6").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
-						$("#cuadro7").css({"top":"calc(1200px + 2.7%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"66.4%"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro4").css({"width":"65.34%","height":"810px"});
+						$("#cuadro5").css({"top":"410px","left":"66.68%"});
+						$("#cuadro6").css({"top":"820px","left":"66.68%"});
+						$("#cuadro7").css({"top":"1230px","left":"0"});
+						$("#cuadro8").css({"top":"1230px","left":"33.34%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro5") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro5").css({"width":"64.6%","height":"800px"});
-						$("#cuadro6").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro7").css({"top":"calc(1200px + 2.7%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"66.4%"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro5").css({"width":"65.34%","height":"810px"});
+						$("#cuadro6").css({"top":"820px","left":"0"});
+						$("#cuadro7").css({"top":"1230px","left":"0"});
+						$("#cuadro8").css({"top":"1230px","left":"33.34%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro6") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro6").css({"width":"64.6%","height":"800px","top":"calc(400px + 0.9%)","left":"33.2%"});
-						$("#cuadro5").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro7").css({"top":"calc(1200px + 2.7%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"66.4%"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro6").css({"width":"65.34%","height":"810px","top":"410px","left":"33.34%"});
+						$("#cuadro5").css({"top":"820px","left":"0"});
+						$("#cuadro7").css({"top":"1230px","left":"0"});
+						$("#cuadro8").css({"top":"1230px","left":"33.34%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro7") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro7").css({"width":"64.6%","height":"800px"});
-						$("#cuadro8").css({"top":"calc(800px + 2.7%)","left":"66.4%"});
-						$("#cuadro9").css({"top":"calc(1200px + 3%)","left":"66.4%"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro7").css({"width":"65.34%","height":"810px"});
+						$("#cuadro8").css({"top":"820px","left":"66.68%"});
+						$("#cuadro9").css({"top":"1230px","left":"66.68%"});
 					}
 
 					else if (cuadroActivo=="cuadro8") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro8").css({"width":"64.6%","height":"800px"});
-						$("#cuadro9").css({"top":"calc(1200px + 2.7%)","left":"0"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro8").css({"width":"65.34%","height":"810px"});
+						$("#cuadro9").css({"top":"1230px","left":"0"});
 					}
 
 					else if (cuadroActivo=="cuadro9") {
-						$(".tarjetas").css("height","2200px");
-						$("#cuadro9").css({"width":"64.6%","height":"800px","top":"calc(800px + 1.8%)","left":"33.2%"});
-						$("#cuadro8").css({"top":"calc(1200px + 2.7%)","left":"0"});
+						$(".tarjetas").css("height","1640px");
+						$("#cuadro9").css({"width":"65.34%","height":"810px","top":"820px","left":"33.34%"});
+						$("#cuadro8").css({"top":"1230px","left":"0"});
 					}
 				}
 			});
@@ -314,35 +317,35 @@
 					var cuadroActivo = $(this).parent().attr("id");
 					if (cuadroActivo=="cuadro1") {
 						$(".tarjetas").css("height","1500px");
-						$("#cuadro1").css({"width":"32.3%","height":"400px"});
-						$("#cuadro2").css({"top":"0","left":"33.2%"});
-						$("#cuadro3").css({"top":"0","left":"66.4%"});
+						$("#cuadro1").css({"width":"32%","height":"400px"});
+						$("#cuadro2").css({"top":"0","left":"33.34%"});
+						$("#cuadro3").css({"top":"0","left":"66.68%"});
 						$("#cuadro4").css({"top":"calc(400px + 0.9%)","left":"0"});
-						$("#cuadro5").css({"top":"calc(400px + 0.9%)","left":"33.2%"});
-						$("#cuadro6").css({"top":"calc(400px + 0.9%)","left":"66.4%"});
-						$("#cuadro7").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(800px + 1.8%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
+						$("#cuadro5").css({"top":"calc(400px + 0.9%)","left":"33.34%"});
+						$("#cuadro6").css({"top":"calc(400px + 0.9%)","left":"66.68%"});
+						$("#cuadro7").css({"top":"820px","left":"0"});
+						$("#cuadro8").css({"top":"820px","left":"33.34%"});
+						$("#cuadro9").css({"top":"820px","left":"66.68%"});
 					} else {
 						$(".tarjetas").css("height","1500px");
-						$("#cuadro1").css({"width":"32.3%","height":"400px"});
-						$("#cuadro2").css({"width":"32.3%","height":"400px"});
-						$("#cuadro3").css({"width":"32.3%","height":"400px"});
-						$("#cuadro4").css({"width":"32.3%","height":"400px"});
-						$("#cuadro5").css({"width":"32.3%","height":"400px"});
-						$("#cuadro6").css({"width":"32.3%","height":"400px"});
-						$("#cuadro7").css({"width":"32.3%","height":"400px"});
-						$("#cuadro8").css({"width":"32.3%","height":"400px"});
-						$("#cuadro9").css({"width":"32.3%","height":"400px"});
+						$("#cuadro1").css({"width":"32%","height":"400px"});
+						$("#cuadro2").css({"width":"32%","height":"400px"});
+						$("#cuadro3").css({"width":"32%","height":"400px"});
+						$("#cuadro4").css({"width":"32%","height":"400px"});
+						$("#cuadro5").css({"width":"32%","height":"400px"});
+						$("#cuadro6").css({"width":"32%","height":"400px"});
+						$("#cuadro7").css({"width":"32%","height":"400px"});
+						$("#cuadro8").css({"width":"32%","height":"400px"});
+						$("#cuadro9").css({"width":"32%","height":"400px"});
 						$("#cuadro2").css({"top":"0","left":"0"});
-						$("#cuadro2").css({"top":"0","left":"33.2%"});
-						$("#cuadro3").css({"top":"0","left":"66.4%"});
+						$("#cuadro2").css({"top":"0","left":"33.34%"});
+						$("#cuadro3").css({"top":"0","left":"66.68%"});
 						$("#cuadro4").css({"top":"calc(400px + 0.9%)","left":"0"});
-						$("#cuadro5").css({"top":"calc(400px + 0.9%)","left":"33.2%"});
-						$("#cuadro6").css({"top":"calc(400px + 0.9%)","left":"66.4%"});
-						$("#cuadro7").css({"top":"calc(800px + 1.8%)","left":"0"});
-						$("#cuadro8").css({"top":"calc(800px + 1.8%)","left":"33.2%"});
-						$("#cuadro9").css({"top":"calc(800px + 1.8%)","left":"66.4%"});
+						$("#cuadro5").css({"top":"calc(400px + 0.9%)","left":"33.34%"});
+						$("#cuadro6").css({"top":"calc(400px + 0.9%)","left":"66.68%"});
+						$("#cuadro7").css({"top":"820px","left":"0"});
+						$("#cuadro8").css({"top":"820px","left":"33.34%"});
+						$("#cuadro9").css({"top":"820px","left":"66.68%"});
 					}
 				}
 

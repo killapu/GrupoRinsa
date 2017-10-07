@@ -15,6 +15,7 @@ header nav{
 
 header nav .brand-logo{
 	color: #000000;
+	font-weight: bold;
 }
 
 header nav i{
@@ -27,6 +28,7 @@ header nav .hide-on-med-and-down{
 
 header nav .hide-on-med-and-down a{
 	color: #000000;
+	font-weight: bold;
 }
 
 
@@ -38,25 +40,38 @@ main {
 
 body main .fotoPortada{
 	margin-bottom: 5px;
-	min-height:calc(100vh - 64px);
+	min-height:50vh;
 	border: none;
-	background-image: url(../img/fondo3.jpg);
-	background-size:100% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center top;
+	position:relative;
 	display: flex;
-	justify-content: center;
+	justify-content:flex-end;
 	align-content: center;
 	flex-direction: column;
+}
+
+body main .fotoPortada #FotoPortadaJPG{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: "FlipH";
+	filter: FlipH;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
 }
 
 body main .fotoPortada h3{
 	width: 90%;
 	margin: 2rem auto;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
+	font-weight: bold;
 	color: #fff;
 	text-align: right;
+	z-index: 2;
 }
 
 main .tarjetas .large{
@@ -109,6 +124,7 @@ main .tarjetas .large .card-image:hover .tituloTarjeta .btn{
 footer {
   background: rgb(0, 0, 0) !important;
   font-size: 14px;
+	margin-top: 15px;
 }
 
 footer ul li{
@@ -120,6 +136,21 @@ footer ul li{
 @media (min-width: 600px) {
 	body {
 		background: red;
+	}
+
+	body main .fotoPortada{
+		margin-bottom: 5px;
+		min-height:calc(100vh - 25vh);
+		border: none;
+		position:relative;
+		display: flex;
+		justify-content:flex-end;
+		align-content: center;
+		flex-direction: column;
+	}
+
+	body main .fotoPortada h3{
+		font-size: 5rem;
 	}
 
 	main .tarjetas .large{
@@ -157,17 +188,20 @@ footer ul li{
 		color: #000000;
 	}
 
+	body main .fotoPortada{
+		min-height:calc(100vh - 64px);
+	}
+
 	main .tarjetas{
 		position: relative;
-		height: 1500px;
-		border: solid 1px red;
+		height: 1230px;
 		vertical-align: baseline;
 	}
 
 	main .tarjetas .large{
-		width: 32.3%;
+		width: 32%;
 		position: absolute;
-		margin: .9%;
+		margin: 5px .67%;
 		transition: .5s;
 	}
 
