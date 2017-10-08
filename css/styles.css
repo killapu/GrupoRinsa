@@ -134,9 +134,9 @@ footer ul li{
 /*Móviles en horizontal o tablets en vertical*/
 
 @media (min-width: 600px) {
-	body {
+	/*body {
 		background: red;
-	}
+	}*/
 
 	body main .fotoPortada{
 		margin-bottom: 5px;
@@ -180,7 +180,7 @@ footer ul li{
 
 @media (min-width: 992px) {
 	body {
-		background: yellow;
+		/*background: yellow;*/
 	}
 
 	header nav .brand-logo{
@@ -256,6 +256,6 @@ footer ul li{
 
 @media (min-width: 1200px) {
 	body {
-		background: blue;
+		/*background: blue;*/
 	}
 }

@@ -1,0 +1,335 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body a{
+	color: #2E9AFE;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+header nav{
+	background: rgb(255, 255, 255);
+}
+
+header nav .brand-logo{
+	color: #000000;
+	font-weight: bold;
+}
+
+header nav i{
+	color: #000000;
+}
+
+header nav .hide-on-med-and-down{
+	margin-right: 40px;
+}
+
+header nav .hide-on-med-and-down a{
+	color: #000000;
+	font-weight: bold;
+}
+
+
+main {
+	flex: 1 0 auto;
+	width: 98%;
+	margin: 0px auto;
+}
+
+main #nosotros,
+main #VyM,
+main #principios,
+main #valores,
+main #filosofia,
+main #servicios,
+main #mundo,
+main #equipo{
+  width: 90%;
+  margin: 40px 5%;
+	/*border: solid 1px green;*/
+}
+
+.inicioSeccion{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+main #nosotros .autores{
+	margin-bottom: 50px;
+}
+
+.textoSubtitulos{
+  font-weight: bold;
+  color: #2E9AFE;
+  font-size: 1.4rem;
+}
+
+.citas{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+	line-height: normal;
+}
+
+
+#nosotros .autores div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#nosotros .autores div p {
+	margin-left: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#nosotros .autores div p span{
+  font-size: 12px;
+}
+
+#VyM .visionymision{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#VyM .row div p{
+	font-weight: bold;
+}
+
+#VyM .franja{
+	height: 25px;
+	background: #2E9AFE;
+}
+
+#principios .principios{
+	margin-bottom: 40px;
+	box-sizing: border-box;
+}
+
+#principios .principios img,
+#valores .valores img,
+#servicios .soyUna{
+	max-height: 150px;
+	width: 98%;
+	margin: 5px 1%;
+}
+
+#servicios .soyUna{
+	min-height: 200px;
+	background: #2E9AFE;
+	min-width: 200px;
+}
+
+#servicios .soyUna p{
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
+#principios .principios p,
+#valores .valores p,
+#filosofia .filosofia p,
+#servicios .servicios p{
+	width: 98%;
+	margin: 5px 1%;
+	font-size: 1.1rem;
+}
+
+#filosofia .filosofia p{
+	text-align: right;
+}
+
+
+#principios .principios p span,
+#valores .valores p span,
+#filosofia .filosofia p span{
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+#servicios .servicios_Simple p,
+#servicios .servicios_Importante p{
+	font-size: 1.05rem;
+}
+
+#servicios .servicios_Simple p span,
+#servicios .servicios_Importante p span{
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+#mundo .textoCompromisos p{
+	width: 70%;
+	font-size: 1.05rem;
+}
+
+#mundo .compromisos {
+	margin-bottom: 40px;
+}
+
+#mundo .compromisos img{
+	height: 70px;
+	max-width: 80%;
+}
+
+#mundo .compromisos div {
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#mundo .compromisos div i{
+	color: #2E9AFE;
+	font-size: 35px;
+}
+
+#owis .row .col{
+	margin-bottom: 30px;
+}
+
+#mundo #owis #rinsaOwi{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#mundo a i{
+	color: #2E9AFE;
+	font-size: 35px;
+}
+
+#mundo .rsrinsa{
+	font-size: 1.2rem;
+}
+
+#owis .fotoOwi {
+	min-height: 50vh;
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+
+#owis .fotoOwi #FotoOwiJPG{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+
+#owis .fotoOwi h3{
+	width: 60%;
+	font-size: 1.5rem;
+	color: #000;
+	text-align: left;
+	z-index: 4;
+	position: relative;
+	top:20px;
+	left: 20px;
+}
+
+#equipo img{
+	max-height: 70vh;
+	width: 100%;
+}
+
+#equipo .col{
+	margin-top: 25px;
+	text-align: right;
+}
+
+#equipo p{
+	font-size: 1.05rem;
+}
+
+#equipo p .nosotrosTitulo{
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+#equipo .iconoIr i{
+	font-size: 35px;
+	background: #2E9AFE;
+	color: #fff;
+	border-radius: 50%;
+}
+
+footer {
+  background: rgb(0, 0, 0) !important;
+  font-size: 14px;
+	margin-top: 15px;
+}
+
+footer ul li{
+  text-align: right;
+}
+
+/*Móviles en horizontal o tablets en vertical*/
+
+@media (min-width: 600px) {
+	body {
+		/*background: red;*/
+	}
+
+	#nosotros .citas {
+		font-size: 2.8rem;
+	}
+
+	#principios .principios{
+		margin-bottom: 20px;
+	}
+
+  footer ul{
+    float: right;
+ }
+
+  footer ul li,
+  footer .killapu{
+     display: inline-block;
+     margin: 0 8px;
+     vertical-align: middle;
+   }
+
+  footer ul li a:hover{
+     border-bottom: solid 2.5px #fff;
+   }
+
+
+}
+
+@media (min-width: 992px) {
+	body {
+		/*background: yellow;*/
+  }
+
+  header nav .brand-logo{
+      margin-left: 40px;
+      color: #000000;
+  }
+
+	#nosotros .citas {
+		font-size: 3rem;
+	}
+
+}
+
+
+/*Escritorios muy anchos*/
+
+@media (min-width: 1200px) {
+	body {
+		/*background: blue;*/
+	}
+
+	#nosotros .citas {
+
+	}
+}
