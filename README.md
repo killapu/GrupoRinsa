@@ -1,2 +1,2 @@
-# Dhakoure_web
-Página web de Dhakore
+# Grupo Rinsa
+Página web del Grupo RINSA
