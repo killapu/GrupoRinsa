@@ -31,6 +31,16 @@ header nav .hide-on-med-and-down a{
 	font-weight: bold;
 }
 
+header nav div ul li .btn{
+	background: #2bbbad;
+	font-weight: bold;
+	color: #fff;
+}
+
+#mobile-demo .btn{
+	width: 50%;
+	text-align: left;
+}
 
 main {
 	flex: 1 0 auto;
@@ -170,14 +180,15 @@ main .tarjetas .large .card-reveal .itemPrograma .tituloItemPrograma{
 	font-size: 1.3rem;
 }
 
-main .tarjetas .large .card-reveal .itemPrograma div a{
-	margin-right: 10px;
+main .tarjetas .large .card-reveal .itemPrograma .col{
+	margin: 10px auto;
 }
 
-main .tarjetas .large .card-reveal .itemPrograma div a i{
-	color: #00a2ff;
-	font-size: 35px;
 
+main .tarjetas .large .card-reveal .itemPrograma div i{
+	color: #00a2ff;
+	font-size: 1.8rem;
+	margin-right: 10px;
 }
 
 main .tarjetas .large .card-reveal .itemPrograma div {

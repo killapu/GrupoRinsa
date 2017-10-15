@@ -39,6 +39,17 @@ header nav .hide-on-med-and-down a{
 	font-weight: bold;
 }
 
+header nav div ul li .btn{
+	background: #2bbbad;
+	font-weight: bold;
+	color: #fff;
+}
+
+#mobile-demo .btn{
+	width: 50%;
+	text-align: left;
+}
+
 
 main {
 	flex: 1 0 auto;
